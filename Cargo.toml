@@ -6,6 +6,7 @@ authors = ["Godhuda <engineering+godhuda@tilde.io>"]
 [dependencies]
 
 libc = "*"
+num = "0.1.32"
 
 [dependencies.cslice]
 version = "*"

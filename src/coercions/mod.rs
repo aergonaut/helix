@@ -1,6 +1,7 @@
 mod slice;
 mod string;
 mod unit;
+mod vec;
 mod bool;
 
 use sys::{VALUE};

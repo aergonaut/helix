@@ -3,6 +3,8 @@
 
 extern crate libc;
 
+use libc::c_long;
+
 pub type void_ptr = *const libc::c_void;
 pub type c_string = *const libc::c_char;
 // pub type c_func = extern "C" fn(...);
@@ -92,4 +94,6 @@ extern "C" {
                       arg: void_ptr,
                       state: *mut RubyException)
                       -> VALUE;
+
+    pub fn rb_ary_entry(array: VALUE, offset: c_long) -> VALUE;
 }

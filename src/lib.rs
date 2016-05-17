@@ -1,4 +1,5 @@
 extern crate cslice;
+extern crate num;
 
 #[doc(hidden)]
 pub extern crate libc;
@@ -93,4 +94,3 @@ impl Class {
         method.install(self.0, name);
     }
 }
-
